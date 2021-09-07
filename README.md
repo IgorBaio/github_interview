@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Requisitos do Sistema 
+# ROTEIRO TESTE FRONTEND 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## NÃO FAÇA FORK DESSE REPOSITÓRIO
 
-## Available Scripts
+Bem-vindo ao teste prático para os candidatos ao cargo de frontend na COMPASSO.
 
-In the project directory, you can run:
+## OBJETIVO
 
-### `yarn start`
+Nosso objetivo com este passo do processo de recrutamento é conhecer melhor as suas habilidades técnicas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Com isso, selecionaremos quais desafios passaremos para você e quais precisaremos prepará-lo para melhor para enfrentar.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## REQUISITOS DA ENTREGA
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para utilizar os Endpoints abaixo, você precisará estar autenticado, para isso você irá utilizar a autenticação do GITHUB:
+- Guia Autenticação: https://docs.github.com/pt/developers/apps/building-oauth-apps
 
-### `yarn build`
+Gostaríamos nos entregasse uma aplicação utilizando a api do GITHUB https://developer.github.com/v3/ consumindo os seguintes endpoints:
+- Endpoint user: https://api.github.com/users/NOME_USUARIO
+- Endpoint repos: https://api.github.com/users/NOME_USUARIO/repos
+- Endpoint starred: https://api.github.com/users/NOME_USUARIO/starred
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A aplicação deverá constituir três componentes principais: 
+- O campo de busca.
+- Visualização de resultados.
+- Dois botões para executar um determinado resultado.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ao clicar nos botões de repos e starred, deverá mostrar uma lista simples de cada endpoint
+apresentado anteriormente.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Dado um determinado usuário, deverá ser possível navegar diretamente até a página de
+detalhe do usuário sem que seja necessário efetuar uma nova busca. Ex: http://localhost:3000/NOME_USUARIO
 
-### `yarn eject`
+- Gostariamos de pesquisar por usuario.
+- Gostariamos de ao clicar no botão de repos, listar repositorios do usuario pesquisado.
+- Gostariamos de ao clicar no botão de starred, listar os repositorios mais visitados por aquele usuario.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Você poderá usar o framework css Bootstrap para construção dos componentes UI (Se preferir, os componentes poderão ser criados do zero, utilizando as boas práticas).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Você deverá usar o framework React para desenvolvimento da sua aplicação.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Você poderá utilizar Jest para testar os request feitos.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## STACK ESPERADA PARA O TESTE
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- HTML 5 (Desejavel o uso de SEO, Semãntica, Usabilidade).
+- JAVASCRIPT (React.js, Performance).
+- CSS 3 (Desejavel o uso de SASS, LESS, Bootstrap, Escalabilidade, Responsivo, BEM CSS).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## CENÁRIO
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Na página do campo de busca, deverá ser possível inserir nomes de usuários do github, repositórios e os mais visitados pelos os usuários.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## AVALIAÇÃO
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+A avaliação será feita da seguinte forma:
 
-### Deployment
+- Vamos analisar e compilar o seu código;
+- Rodar sua aplicação e executar testes para validar o atendimento funcional dos itens acima;
+- Verificar se o seu código é limpo (Clean Code), fácil de entender e de dar manutenção;
+- Durante entrevista, poderemos simular uma revisão do seu código, percorremos o código junto com você para discutirmos sobre suas decisões de implementação, os pontos positivos e negativos;
+- O saldo entre o que for positivo e o que for negativo vai determinar a recomendação do ponto de vista técnico ou não de sua contratação. (Se faltar pouco para atingir uma recomendação positiva, daremos um prazo para você corrigir e retornar);
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Requisitos Obrigatórios:
 
-### `yarn build` fails to minify
+- Verificar as boas práticas voltadas ao CSS 3 e a Metodologia BEM CSS;
+- Verificar as boas práticas voltadas ao React;
+- Verificar as boas práticas voltadas ao HTML 5;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## DICAS:
+
+- Tenha em mente que o seu avaliador irá executar o código antes de falar com você;
+- Procure fazer uma entrega simples mas consistente, usando a experiência e conhecimento adquiridos durante sua carreira;
+- Não se preocupe em entregar algo extremamente completo ou rebuscado, não vamos usar este código em produção;
+- Tudo será avaliado, dê o seu melhor!
