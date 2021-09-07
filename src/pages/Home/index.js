@@ -66,6 +66,7 @@ const ReceivePayment = ({ history }) => {
       dispatch(getUser(state.username));
     }
   }, [state.username]);
+
   useEffect(() => {
     if (hasAlert?.show) {
       setResultTransition({
@@ -131,7 +132,7 @@ const ReceivePayment = ({ history }) => {
       title="Github - Interview"
       subHeader={
         <SubHeader
-          title="Compasso Uol - IgorBaio"
+          title="Compasso Uol - Igor Baio"
           history={history}
           user={user || null}
         />
