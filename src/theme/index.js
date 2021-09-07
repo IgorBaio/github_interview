@@ -10,7 +10,7 @@ const theme = createMuiTheme({
     },
     palette: {
         primary: {
-            main: colors.oldBurgundy,
+            main: colors.orangeCompasso,
         },
         error: {
             main: colors.perfectRed,
