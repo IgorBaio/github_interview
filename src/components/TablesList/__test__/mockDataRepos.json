@@ -1,0 +1,36 @@
+{
+    "dataHeader": [
+      {
+        "id": "name",
+        "label": "Repositório",
+        "align": "left",
+        "width": "5%"
+      },
+      {
+        "id": "language",
+        "label": "Linguagem",
+        "align": "left",
+        "width": "5%"
+      },
+      {
+        "id": "fullName",
+        "label": "Nome Completo",
+        "align": "left",
+        "width": "20%"
+      },
+      {
+        "id": "htmlUrl",
+        "label": "Url",
+        "align": "left",
+        "width": "10%"
+      }
+    ],
+    "dataRows": [
+         {"id": "id",
+          "fullName": { "content": "full_name" },
+          "name": { "content": "name" },
+          "htmlUrl": { "content": "html_url" },
+          "language": { "content": "language" }
+        }
+    ]
+}

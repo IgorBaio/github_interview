@@ -1,0 +1,9 @@
+User:
+    [x] Listar: html_url, login, avatar_url
+Repos:
+    [x] Listar: full-name, name, html_url, language,clone_url
+Starred:
+    [x] Listar: full-name, name, html_url, language,clone_url
+  
+Testes:
+    [X] Testes unitários
